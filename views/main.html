@@ -1,0 +1,25 @@
+<div class="jumbotron">
+  <div ng-controller="AuctionItemsController as vm">
+      <div class="row">
+       <div class="col-xs-6" style='min-width: 200px' ng-repeat="auction in vm.auctions">
+                                        {{init(auction)}}
+       <div class="panel panel-info">
+        <div class="panel-body">
+         <h3>{{auction.Name}}</h3>
+         <div><strong>Starting price:</strong> {{auction.StartingPrice | currency}}</div>
+         <div><strong>Minimum price:</strong> {{auction.MinimumPrice | currency}}</div>
+         <div><strong>Current price:</strong> <h3>{{auction.currentPrice | currency}}</h3></div>
+         <div>
+             <strong>Auction ends in</strong>
+             <h3 class="text-primary"> {{auction.remainingTime|durationview}}</h3>
+        </div>
+        <raphael-gauge config="auction.gauge"></raphael-gauge>  
+        <div><a class="btn btn-lg btn-success" ng-href="#/bidfor/{{auction.Id}}"><span class="glyphicon glyphicon-ok"></span> Mine!</a></div>
+            
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+</div>
+

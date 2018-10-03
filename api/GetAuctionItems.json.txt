@@ -1,0 +1,20 @@
+[
+{ 
+  "Id"                   : "b6f15776fe5f49389766369da2332c71",
+  "Name"                 : "XBox One",
+  "AuctionBeginDateTime" : "2014-12-18T13:15:12.3964844Z",
+  "AuctionEndDateTime"   : "2014-12-18T13:05:37.3964844Z",
+  "StartingPrice"        : 350.0,
+  "MinimumPrice"         : 250.0,
+  "ThumbnailImage"       : null
+},
+{
+  "Id"                   : "641ee563a4a748aabdcf3132fb4a7be1",
+  "Name"                 : "iPad",
+  "StartingPrice"        : 520.0,
+  "MinimumPrice"         : 300.0,
+  "AuctionBeginDateTime" : "2014-12-18T13:15:12.3964844Z",
+  "AuctionEndDateTime"   : "2014-12-18T13:15:12.3964844Z",
+  "ThumbnailImage"       : null
+}
+]
