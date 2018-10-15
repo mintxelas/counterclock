@@ -1,4 +1,12 @@
-'use strict';
+"use strict";
+
+require("jquery");
+require("bootstrap");
+require("moment");
+
+require("angular");
+require("angular-moment");
+require("angular-route");
 
 /**
  * @ngdoc overview
@@ -9,23 +17,23 @@
  * Main module of the application.
  */
 angular
-  .module('auctionsApp', [
-    'ngRoute',
-	  'angularMoment',
-    'angular-raphael-gauge'
+  .module("auctionsApp", [
+    "ngRoute",
+    "angularMoment",
+    "angular-raphael-gauge"
     //"ds.clock"
   ])
-  .config(function ($routeProvider) {
+  .config(function($routeProvider) {
     $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'AuctionItemsController'
+      .when("/", {
+        templateUrl: "views/main.html",
+        controller: "AuctionItemsController"
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+      .when("/about", {
+        templateUrl: "views/about.html",
+        controller: "AboutCtrl"
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: "/"
       });
   });
