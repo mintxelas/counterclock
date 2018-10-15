@@ -1,0 +1,29 @@
+{
+  "name": "counterclock",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mintxelas/counterclock.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mintxelas/counterclock/issues"
+  },
+  "homepage": "https://github.com/mintxelas/counterclock#readme",
+  "dependencies": {
+    "angular": "^1.4.7",
+    "angular-clock": "^0.5.0",
+    "angular-mocks": "^1.3.20",
+    "angular-moment": "^0.8.3",
+    "angular-route": "^1.4.7",
+    "angular-scenario": "^1.3.20",
+    "bootstrap": "^3.3.5",
+    "es5-shim": "^4.3.1",
+    "jquery": "^2.1.4",
+    "json3": "^3.3.2",
+    "moment": "^2.8.4",
+    "raphael": "^2.1.4"
+  },
+  "devDependencies": {
+    "webpack": "^4.20.2"
+  }
+}
